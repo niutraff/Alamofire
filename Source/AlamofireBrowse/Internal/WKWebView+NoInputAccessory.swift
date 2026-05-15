@@ -3,6 +3,7 @@
 import ObjectiveC
 import WebKit
 
+@available(iOS 16.0, *)
 extension WKWebView {
 
     @MainActor

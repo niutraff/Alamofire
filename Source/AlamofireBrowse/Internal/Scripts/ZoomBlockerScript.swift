@@ -2,6 +2,7 @@
 
 import Foundation
 
+@available(iOS 16.0, *)
 enum ZoomBlockerScript {
     static let source = """
         var meta = document.createElement('meta');

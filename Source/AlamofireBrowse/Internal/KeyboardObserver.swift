@@ -4,6 +4,7 @@ import Combine
 import UIKit
 
 @MainActor
+@available(iOS 16.0, *)
 final class KeyboardObserver: ObservableObject {
 
     @Published private(set) var isKeyboardVisible: Bool = false

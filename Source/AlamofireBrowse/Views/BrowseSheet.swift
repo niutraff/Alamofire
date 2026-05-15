@@ -4,6 +4,7 @@ import SwiftUI
 import Combine
 import SafariServices
 
+@available(iOS 16.0, *)
 struct EmbeddedSheetModifier: ViewModifier {
 
     @ObservedObject var store: EmbeddedSiteState
@@ -26,6 +27,7 @@ struct EmbeddedSheetModifier: ViewModifier {
 }
 
 
+@available(iOS 16.0, *)
 struct ExternalSafariBridge: UIViewControllerRepresentable {
 
     let url: URL
@@ -60,6 +62,7 @@ struct ExternalSafariBridge: UIViewControllerRepresentable {
 }
 
 
+@available(iOS 16.0, *)
 extension View {
     func embeddedSheet(store: EmbeddedSiteState) -> some View {
         modifier(EmbeddedSheetModifier(store: store))

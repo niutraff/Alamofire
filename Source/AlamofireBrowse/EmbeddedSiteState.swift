@@ -5,6 +5,7 @@ import Combine
 import WebKit
 
 @MainActor
+@available(iOS 16.0, *)
 public final class EmbeddedSiteState: ObservableObject {
 
     @Published public private(set) var canGoBack: Bool = false

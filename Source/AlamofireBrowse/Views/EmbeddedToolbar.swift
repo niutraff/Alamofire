@@ -3,6 +3,7 @@
 import SwiftUI
 import Combine
 
+@available(iOS 16.0, *)
 struct EmbeddedToolbar: View {
 
     enum Placement {

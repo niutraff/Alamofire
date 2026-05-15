@@ -4,6 +4,7 @@ import UIKit
 import WebKit
 
 @MainActor
+@available(iOS 16.0, *)
 final class EmbeddedSurfaceFlow: NSObject {
 
     private let store: EmbeddedSiteState
@@ -32,6 +33,7 @@ final class EmbeddedSurfaceFlow: NSObject {
     }
 }
 
+@available(iOS 16.0, *)
 extension EmbeddedSurfaceFlow: WKNavigationDelegate {
 
     func webView(
@@ -151,6 +153,7 @@ extension EmbeddedSurfaceFlow: WKNavigationDelegate {
     }
 }
 
+@available(iOS 16.0, *)
 extension EmbeddedSurfaceFlow: WKUIDelegate {
 
     func webView(
@@ -201,6 +204,7 @@ extension EmbeddedSurfaceFlow: WKUIDelegate {
     }
 }
 
+@available(iOS 16.0, *)
 extension EmbeddedSurfaceFlow: UIScrollViewDelegate {
 
     func scrollViewWillBeginZooming(

@@ -3,6 +3,7 @@
 import SwiftUI
 import WebKit
 
+@available(iOS 16.0, *)
 struct EmbeddedSurfaceBridge: UIViewRepresentable {
 
     let url: URL

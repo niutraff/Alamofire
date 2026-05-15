@@ -3,6 +3,7 @@
 import SwiftUI
 import Combine
 
+@available(iOS 16.0, *)
 struct ExternalEmbeddedSheetModifier: ViewModifier {
 
     @ObservedObject var store: EmbeddedSiteState
@@ -56,6 +57,7 @@ struct ExternalEmbeddedSheetModifier: ViewModifier {
 }
 
 
+@available(iOS 16.0, *)
 extension View {
     func externalEmbeddedSheet(
         store: EmbeddedSiteState,

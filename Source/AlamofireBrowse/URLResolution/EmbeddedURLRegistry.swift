@@ -3,6 +3,7 @@
 import Foundation
 
 @MainActor
+@available(iOS 16.0, *)
 public final class EmbeddedURLRegistry {
 
     public static let shared = EmbeddedURLRegistry()

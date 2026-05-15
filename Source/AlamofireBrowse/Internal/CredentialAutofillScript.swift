@@ -2,6 +2,7 @@
 
 import Foundation
 
+@available(iOS 16.0, *)
 enum CredentialAutofillScript {
     static let messageHandlerName = "credentialAutofill"
 

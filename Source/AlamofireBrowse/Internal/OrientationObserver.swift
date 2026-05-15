@@ -5,6 +5,7 @@ import Combine
 import UIKit
 
 @MainActor
+@available(iOS 16.0, *)
 final class OrientationObserver: ObservableObject {
 
     enum Layout {

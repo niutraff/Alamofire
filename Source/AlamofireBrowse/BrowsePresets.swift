@@ -2,6 +2,7 @@
 
 import Foundation
 
+@available(iOS 16.0, *)
 public extension EmbeddedConfig {
 
     static let `default` = EmbeddedConfig()

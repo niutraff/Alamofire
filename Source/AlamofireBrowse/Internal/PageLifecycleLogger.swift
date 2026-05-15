@@ -4,6 +4,7 @@ import Foundation
 import WebKit
 
 @MainActor
+@available(iOS 16.0, *)
 final class PageLifecycleLogger: NSObject, WKScriptMessageHandler {
 
     private weak var store: EmbeddedSiteState?

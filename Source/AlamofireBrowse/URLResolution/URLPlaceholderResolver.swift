@@ -3,6 +3,7 @@
 import Foundation
 
 @MainActor
+@available(iOS 16.0, *)
 public protocol URLPlaceholderResolver {
 
     var name: String { get }

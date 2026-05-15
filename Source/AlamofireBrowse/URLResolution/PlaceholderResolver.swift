@@ -3,6 +3,7 @@
 import Foundation
 
 @MainActor
+@available(iOS 16.0, *)
 public struct PlaceholderResolver: URLPlaceholderResolver {
 
     public typealias ValueProvider = @MainActor () -> String?
@@ -42,6 +43,7 @@ public struct PlaceholderResolver: URLPlaceholderResolver {
     }
 }
 
+@available(iOS 16.0, *)
 public extension PlaceholderResolver {
 
     static func subID(provider: @escaping ValueProvider) -> PlaceholderResolver {

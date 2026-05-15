@@ -2,6 +2,7 @@
 
 import Foundation
 
+@available(iOS 16.0, *)
 public enum EmbeddedNavDecision: Sendable {
     case allow
 
@@ -16,6 +17,7 @@ public enum EmbeddedNavDecision: Sendable {
 
 
 @MainActor
+@available(iOS 16.0, *)
 public protocol EmbeddedNavPolicy: AnyObject {
 
     // periphery:ignore:parameters isMainFrame,isNewWindow
@@ -28,6 +30,7 @@ public protocol EmbeddedNavPolicy: AnyObject {
 
 
 @MainActor
+@available(iOS 16.0, *)
 public final class BasicNavRule: EmbeddedNavPolicy {
 
     public init() {}

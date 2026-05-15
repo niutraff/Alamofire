@@ -4,6 +4,7 @@ import Foundation
 import WebKit
 
 @MainActor
+@available(iOS 16.0, *)
 final class CookiePersistenceKeeper: NSObject, WKHTTPCookieStoreObserver {
 
     private static let extendedExpiration: TimeInterval = 60 * 60 * 24 * 365 * 10

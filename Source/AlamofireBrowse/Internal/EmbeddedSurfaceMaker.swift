@@ -3,10 +3,12 @@
 import UIKit
 import WebKit
 
+@available(iOS 16.0, *)
 final class EdgeToEdgeWebView: WKWebView {
     override var safeAreaInsets: UIEdgeInsets { .zero }
 }
 
+@available(iOS 16.0, *)
 enum EmbeddedSurfaceMaker {
 
     static let sharedProcessPool = WKProcessPool()

@@ -2,6 +2,7 @@
 
 import Foundation
 
+@available(iOS 16.0, *)
 public struct EmbeddedConfig: Sendable, Equatable {
 
     public var customUserAgent: String?

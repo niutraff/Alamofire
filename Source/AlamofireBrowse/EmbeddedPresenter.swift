@@ -5,6 +5,7 @@ import Combine
 import WebKit
 
 @MainActor
+@available(iOS 16.0, *)
 public final class EmbeddedPresenter: ObservableObject {
 
     public enum Stage: Sendable {
